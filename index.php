@@ -23,5 +23,29 @@
                                 </div>
                         </div>
                     </form>
+
+
+                    <?php
+                        // Session Super Global
+                            if(!empty($_SESSION['todo'])){
+                                // Current Date Initialization
+                                $date = date('Y-m-d');
+                                // ForEach For Loop Starts
+                                foreach($_SESSION['todo'] as $key => $value){
+                                    // Displaying All The Items In A Div And In A Bootstrap Alert Box
+                                    echo '<div class="alert alert-light border shadow-sm pb-4">';
+                                    echo "<li>".$value['todo_item']." ".$date.
+                                    '<a class="btn btn-danger float-right" href="index.php?to='. $key.'&action=delete">Delete</a>'."</li><br>";
+                                    echo '</div>';
+                                    // End Of Displaying Items
+                                }
+                                // End ForEach For Loop
+                            }
+                        // End Session Super Global    
+                        ?>
+                        </div>
+                <div class="col-sm-2"></div>
+        </div>
+    </div>
 </body>
 </html>
