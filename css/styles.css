@@ -77,3 +77,24 @@
 			background-color:#F00;
 			color:#FFF;
 		}
+/* *
+ * New To Do Form
+ */
+ #new-todo {
+	text-align: left;
+}
+	#new-todo input {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 14px;
+		padding:5px 8px;
+	}
+	#new-todo button {
+		background-color:#333;
+		color:#FFF;
+		border:0;
+		padding:8px 16px;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 12px;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
