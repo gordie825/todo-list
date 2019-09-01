@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 </head>
 <body>
-<div class="text-center mt-5 container">
+    <!-- Start Bootstrap Columns And Following Naming Convention To Align The Items In The Centre Of The Page -->
+    <div class="text-center mt-5 container">
         <div class="row">
             <div class="col-sm-2"></div>
                 <div class="col-sm-8">
+                <!-- Creating A Form -->
                 <form method="post" action="todo.php">
                         <div class="input-group mt-5 mb-3">
                             <input type="text" class="form-control" name="todo_input" placeholder="Item Todo " aria-label="Todo Item" aria-describedby="button-addon2">
@@ -23,7 +25,7 @@
                                 </div>
                         </div>
                     </form>
-
+                    <!-- Ending A Form -->
 
                     <?php
                         // Session Super Global
