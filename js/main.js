@@ -1,3 +1,4 @@
+// Strike And UnStrike-through
 $(document).ready(function(){
     var item = 0;
     $("li").each(function(c){
@@ -17,3 +18,10 @@ $(document).ready(function(){
                 }
             });
         });
+         // Code To Make Sure When A New Items Is Added That The Striked-through Items Remain The Same Without Reloading The Form
+ $("li").each(function(c){
+    if(sessionStorage.getItem(c)==1){
+        $(this).css("text-decoration", "line-through");
+    }
+ });
+ });
