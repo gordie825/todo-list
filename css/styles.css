@@ -1,0 +1,14 @@
+/**
+ * Body Structure
+ */
+ body {
+	background-image: url('../images/background.jpg');
+	font-family: 'Open Sans', sans-serif;
+}
+
+/**
+ * To Do List
+ */
+ li{
+	 list-style: none;
+ }
