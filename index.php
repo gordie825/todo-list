@@ -13,5 +13,15 @@
         <div class="row">
             <div class="col-sm-2"></div>
                 <div class="col-sm-8">
+                <form method="post" action="todo.php">
+                        <div class="input-group mt-5 mb-3">
+                            <input type="text" class="form-control" name="todo_input" placeholder="Item Todo " aria-label="Todo Item" aria-describedby="button-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary" name="submit" type="submit" id="button-addon2">
+                                        Add Todo
+                                    </button>
+                                </div>
+                        </div>
+                    </form>
 </body>
 </html>
