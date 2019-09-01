@@ -12,3 +12,31 @@
  li{
 	 list-style: none;
  }
+
+ #todo-list {
+	margin:0 0 30px;
+	padding:20px 25px;
+	background-color: #F7F7F7;
+}
+	#todo-list li {
+		clear:both;
+		padding:6px;
+		border-bottom:1px solid #DDD;
+		margin-top:3px;
+		margin-bottom:3px;
+	}
+	#todo-list li:first-child {
+		margin-top:0;
+	}
+	#todo-list li:last-child {
+		border-bottom:0;
+		margin-bottom:0;
+	}
+	#todo-list li:hover {
+		background-color:#FFF;
+	}
+	#todo-list li:after {
+		clear:both;
+		content:'';
+		display: table;
+	}
