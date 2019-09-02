@@ -34,6 +34,7 @@
                 <form method="post" action="todo.php">
                         <div class="input-group mt-5 mb-3">
                             <input type="text" class="form-control" name="todo_input" placeholder="Item Todo " aria-label="Todo Item" aria-describedby="button-addon2">
+                            <input type="date" class="form-control" name="todo_date" aria-label="Todo Date" aria-describedby="button-addon2">
                                 <div class="input-group-append">
                                     <button class="btn btn-primary" name="submit" type="submit" id="button-addon2">
                                         Add Todo
@@ -46,13 +47,11 @@
                     <?php
                         // Session Super Global
                             if(!empty($_SESSION['todo'])){
-                                // Current Date Initialization
-                                $date = date('Y-m-d');
                                 // ForEach For Loop Starts
                                 foreach($_SESSION['todo'] as $key => $value){
                                     // Displaying All The Items In A Div And In A Bootstrap Alert Box
                                     echo '<div class="alert alert-light border shadow-sm pb-4">';
-                                    echo "<li>".$value['todo_item']." ".$date.
+                                    echo "<li>".$value['todo_item']."---".$value['todo_dates'].
                                     '<a class="btn btn-danger float-right" href="index.php?to='. $key.'&action=delete">Delete</a>'."</li><br>";
                                     echo '</div>';
                                     // End Of Displaying Items
