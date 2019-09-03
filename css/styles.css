@@ -6,6 +6,15 @@
 	font-family: 'Open Sans', sans-serif;
 }
 
+/* 
+* Heading
+*/
+
+h1{
+	color: #FFFFFF !important;
+	font-family: 'Indie Flower', cursive !important;
+}
+
 /**
  * To Do List
  */

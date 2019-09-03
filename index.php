@@ -20,6 +20,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <title>THINGS TO DO</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -27,6 +28,11 @@
 <body>
     <!-- Start Bootstrap Columns And Following Naming Convention To Align The Items In The Centre Of The Page -->
     <div class="text-center mt-5 container">
+    <div class="container">
+  <div class="row justify-content-center">
+    <h1>GORDIE'S TODO LIST</h1>
+  </div>
+</div>
         <div class="row">
             <div class="col-sm-2"></div>
                 <div class="col-sm-8">
